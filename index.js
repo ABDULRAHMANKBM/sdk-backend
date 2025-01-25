@@ -38,7 +38,7 @@ const signature = require('./signature');
 const cors = require('cors');
 
 const app = express();
-const acceptedURL = ['https://sdk-test-5h1iuxbpz-abdulrahman-kbms-projects.vercel.app/','http://localhost:3000', 'https://localhost:3001', 'http://localhost:5173', 'https://0a0f-37-19-205-204.ngrok-free.app', 'https://marketplace.zoom.us/authorize?client_id=TDZ8rAMKT7aeZFW7iBdvqg&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauth%2Foauth%2Fcallback&_zmp_login_state=vR8TZ4kdSs6LhJzjsQRwmw']
+const acceptedURL = ['https://sdk-test-5h1iuxbpz-abdulrahman-kbms-projects.vercel.app','https://sdk-test-5h1iuxbpz-abdulrahman-kbms-projects.vercel.app/','http://localhost:3000', 'https://localhost:3001', 'http://localhost:5173', 'https://0a0f-37-19-205-204.ngrok-free.app', 'https://marketplace.zoom.us/authorize?client_id=TDZ8rAMKT7aeZFW7iBdvqg&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauth%2Foauth%2Fcallback&_zmp_login_state=vR8TZ4kdSs6LhJzjsQRwmw']
 app.use(cors({
     origin: acceptedURL,  // Specify the exact frontend origin
     credentials: true,  // Allow credentials (cookies, HTTP authentication)
